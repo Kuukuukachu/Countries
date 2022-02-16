@@ -16,6 +16,7 @@ function App() {
     <br />
       <div>
         <CountryCard />
+        <p>Hey</p>
       </div>
     </div>
   );

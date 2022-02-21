@@ -8,6 +8,7 @@ import SearchIcon from '@mui/icons-material/Search';
 
 export default function Search() {
   return (
+    <div style={{cssFloat: "left", padding: "10px 40px"}}>
     <Box sx={{ '& > :not(style)': { m: 1 } }}>
       <FormControl variant="standard">
         <InputLabel htmlFor="input-with-icon-adornment">
@@ -23,5 +24,6 @@ export default function Search() {
         />
       </FormControl>
     </Box>
+    </div>
   );
 }

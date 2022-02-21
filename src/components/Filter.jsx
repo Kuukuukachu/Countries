@@ -11,8 +11,12 @@ export default function SelectVariants() {
     setRegion(event.target.value);
   };
 
+  const mobileCheck = () => {
+    
+  }
+
   return (
-    <div>
+    <div style={{cssFloat: "right", padding: "10px 40px"}}>
       <FormControl variant="standard" sx={{ m: 1, minWidth: 150 }}>
         <InputLabel id="demo-simple-select-standard-label">Filter by Region</InputLabel>
         <Select

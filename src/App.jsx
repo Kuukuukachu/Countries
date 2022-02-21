@@ -1,24 +1,25 @@
 import * as React from 'react';
-import CountryCard from "./components/CountryCard";
+import Countries from "./pages/Countries";
 import HeaderBar from "./components/header/HeaderBar";
 import Search from "./components/Search";
 import Filter from "./components/Filter";
+import { Container } from '@mui/material';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
+    <>
     <HeaderBar />
     <br />
-    <div>
+    <Container maxWidth="xl">
       <Search />
       <Filter />
-    </div>
-    <br />
-      <div>
-        <CountryCard />
-        <p>Hey</p>
-      </div>
-    </div>
+    </Container>
+    <div style={{clear: "both"}} />
+    <Container maxWidth="xl">
+      <Countries />
+    </Container>
+    </>
   );
 }
 

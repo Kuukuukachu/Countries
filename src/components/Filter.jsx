@@ -11,10 +11,6 @@ export default function SelectVariants() {
     setRegion(event.target.value);
   };
 
-  const mobileCheck = () => {
-    
-  }
-
   return (
     <div style={{cssFloat: "right", padding: "10px 40px"}}>
       <FormControl variant="standard" sx={{ m: 1, minWidth: 150 }}>

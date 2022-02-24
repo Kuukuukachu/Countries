@@ -23,10 +23,6 @@ function CountryCard(props) {
     return (str && str.length > n) ? str.substr(0, n-1) + '...' : str;
   };
 
-  function capitalCheck(cap){
-    return (cap === 'undefined') ? cap = '...' : cap;
-  }
-
   return (
     <div style={{ padding: "20px 25px", cssFloat:"left", width: "20%" }}>
       <Card sx={{ maxWidth: 400 }}>

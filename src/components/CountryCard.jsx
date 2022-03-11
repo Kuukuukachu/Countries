@@ -11,17 +11,9 @@ import TableContainer from '@mui/material/TableContainer';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import PropTypes from 'prop-types';
+import truncate from '../utils/truncate';
 
-function CountryCard(props) {
-  const { name } = props;
-  const { region } = props;
-  const { population } = props;
-  const { capital } = props;
-  const { flag } = props;
-
-  function truncate(str, n){
-    return (str && str.length > n) ? str.substr(0, n-1) + '...' : str;
-  };
+function CountryCard({name, region, population, capital, flag}) {
 
   return (
     <div style={{ padding: "20px 25px", cssFloat:"left", width: "20%" }}>
@@ -31,7 +23,7 @@ function CountryCard(props) {
             component="img"
             height="140"
             image={ flag }
-            alt="za warudo"
+            alt={ name }
           />
           <CardContent>
             <Typography gutterBottom variant="h6" component="div">

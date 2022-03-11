@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Countries from "./pages/Countries";
-import HeaderBar from "./components/header/HeaderBar";
+import HeaderBar from "./components/HeaderBar";
 import Search from "./components/Search";
 import Filter from "./components/Filter";
 import { Container } from '@mui/material';
@@ -10,7 +10,6 @@ function App() {
   return (
     <>
     <HeaderBar />
-    <br />
     <Container maxWidth="xl">
       <Search />
       <Filter />
